@@ -1,1 +1,14 @@
-
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please type in the word to be reversed");
+        String x = sc.nextLine();
+        char[] character = x.toCharArray();
+        int length = character.length;
+        for(int i = length-1; i >= 0; i--){
+            System.out.print(character[i]);
+        }
+    }
+}
+//Written by Steven Liu
