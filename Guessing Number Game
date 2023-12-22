@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
+        int randomint = rand.nextInt(1000);
+        int x = 0;
+        System.out.println("Welcome to the Guessing Game!");
+        System.out.println("Random number has been generated!. Whats your guess?");
+        do {
+            x = sc.nextInt();
+            if(x < randomint){
+                System.out.println("That's too low. Guess again!");
+            } else if(x > randomint){
+                System.out.println("That's too high. Guess again!");
+            }
+        }
+        while (x != randomint);
+        System.out.println("You're right!!");
+        }
+    }
